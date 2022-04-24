@@ -1,11 +1,10 @@
-let age = prompt("input your age")
-function getAge(age){
-    if (age >= 18){
-        alert('Welcome')
-    }else if (age < 18 & age > 0){
-        alert('You can come out')
-    }else{
-        alert("Are you moron?")
-    }
+function calcNumbers(a, b){
+    document.writeln(`${a} + ${b} = ${a + b}<br>`)
+    document.writeln(`${a} - ${b} = ${a - b}<br>`)
+    document.writeln(`${a} * ${b} = ${a * b}<br>`)
+    document.writeln(`${a} / ${b}= ${a / b}<br>`)
+    document.writeln(`${a} ** ${b} = ${a ** b}<br>`)
 }
-getAge(age)
+let a = prompt("a")
+let b = prompt("b")
+calcNumbers(a, b)
